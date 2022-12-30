@@ -25,5 +25,6 @@ MIT License
 ## Features
 
 - Create hover effect on Image.
-- Underline Link Hover Effect
+- Underline Link Hover Effect.
+- Works on smaller devices.
 

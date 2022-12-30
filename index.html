@@ -1,99 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<!-- //test -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plasencia // Full Stack Web Devloper</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plasencia // Web Developer</title>
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
-    <div class="hero-banner">
-        <video autoplay loop muted plays-inline class="back-video" >
-            <source src="assets/PORT.mp4" type="video/mp4">
-        </video>
-    <header>
-        <nav>
-            <img src="assets/logo.png" class="logo">
+  <!-- hero/ background video / nav -->
+  <hero>
+    <video autoplay loop muted plays-inline class="back-video" >
+      <source src="assets/PORT.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <img src="assets/logo.png" class="logo">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+        <h1>Full Stack Web Devloper</h1>
+        <a href="#about">Christian Plasencia</a>
 
-                <ul>
-                    <li><a href="#about"> About </a></li>
-                    <li><a href="#work"> Work </a></li>
-                    <li><a href="#contact"> Contact </a></li>
-                    <li><a href="#resume"> Resume</a></li>
-                </ul>
-        </nav>
-        
-</header>
-    
-        <div class="content">
-            <h1>Full Stack Web Devloper</h1>
-            <a href="#contact">Christian Plasencia</a>
-        </div> 
     </div>
-    <main class="page-wrapper">
-    <section class="page-section" id="about">
-        <div class="main">
-            <img src="assets/you.png"> 
-            <div class="about-text page-section" id="about">
-                <h2>About Me</h2>
-                <p>Im currently attending a Full stack coding bootcamp that focuses on creating scalable applications, data structures, and algorithms. 
+  </hero>
+
+
+
+  <main class="page-wrapper">
+                                              <!-- about me -->
+    <section class="page-section aboutMe"  id="about">
+      <img src="assets/you.png">
+      <div>
+        <h3>About Me</h3>
+        <p>
+          Im currently attending a Full stack coding bootcamp that focuses on creating scalable applications, data structures, and algorithms. 
                    The bootcamp is more backend focused using JavaScript, Node, SQL, MongoDB, and React.  
                    Ive been working for a Target DC for about 5 years. Ive always wanted to get into the software and tech industry.  
-                   I love creating 3d renders and animations using blender. Im looking to have a career change and get my first job as a Full Stack Web Developer. </p>
-                   <button type="button">Let's Talk</button>
-            </div>
-
-        </div>
+                   I love creating 3d renders and animations using blender. Im looking to have a career change and get my first job as a Full Stack Web Developer. 
+        </p>
+      
+      </div>
     </section>
-    
-    <section class="work" id="work">
-    <h2>Work</h2>
-        <div class="row">
-            <div class="col">
-                <div class="card card1 ">
-                    <h5>Surf Report</h5>
-                    <br>
-                    <p>MERN Stack</p>
-                </div>
-            </div>
+
+                                      <!-- portfolio container -->
+    <h2>My Work</h2>                                  
+    <section class="page-section" id="work">
+                           
+      <div class="flex-container">
+
+        <a href="#" class="flex-item surf-report">
+          <div>
+            <h3>Surf Report</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
         
-            <div class="col">
-                <div class="card card2">
-                    <h5>LED Wall</h5>
-                    <p>Node/IoT</p>
-                </div>
-                <div class="card card3">
-                    <h5>Calculator</h5>
-                    <p>React/JavaScript/CSS</p>
-                </div>
-                <div class="card card4">
-                    <h5>Pastel Puzzels</h5>
-                    <p>MERN Stack</p>
-                </div>
-                <div class="card card5">
-                    <h5>Run Buddy</h5>
-                    <p>HTML/CSS</p>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <section class="page-section contact" id="contact">
-        <h2>Contact Me</h2>
-        <div>
-          <address>
-            <a href="tel:+9092549905">909.254.9905</a>
-            <a href="plasencia1120@gmail.com">plasencia1120@gmail.com</a>
-            <a href="#">GitHub</a>
-            <a href="#">Twitter</a>
-            <a href="#">Spotify</a>
-          </address>
-        </div>
-      </section> 
-    </main>
+        <a href="#" class="flex-item led-wall">
+          <div>
+            <h3>LED Wall</h3>
+            <span>Node/IoT</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item react-calc">
+          <div>
+            <h3>Calculator</h3>
+            <span>React/JavaScript/CSS</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex-item pastel-puzzles">
+          <div>
+            <h3>Pastel Puzzels</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
 
     
+        <a href="#" class="flex-item run-buddy">
+          <div>
+            <h3>Run Buddy</h3>
+            <span>HTML/CSS</span>
+          </div>
+        </a>
 
+      </div>
+    </section>
+
+                                          <!-- Contact Info -->
+    <section class="page-section contact" id="contact">
+      <h2>Contact Me</h2>
+      <div>
+        <address>
+          <a href="tel:+9092549905">909.254.9905</a>
+          <a href="plasencia1120@gmail.com">Plasencia1120@gmail.com</a>
+          <a href="https://github.com/Chris70A">GitHub</a>
+          <a href="https://twitter.com/Consolelogchris">Twitter</a>
+          <a href="#">Spotify</a>
+        </address>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
