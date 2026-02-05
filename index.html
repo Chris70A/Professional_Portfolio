@@ -1,113 +1,275 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<!-- //test -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Plasencia // Web Developer</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- hero/ background video / nav -->
-  <hero>
-    <video autoplay loop muted plays-inline class="back-video" >
-      <source src="assets/PORT.mp4" type="video/mp4">
-    </video>
-    <nav>
-      <img src="assets/logo.png" class="logo">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">◉◉◉</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experiences">My Experience</a></li>
+
+            </ul>
+           
+        </div>
     </nav>
-    <div class="content">
-        <h1>Full Stack Web Devloper</h1>
-        <a href="#about">Christian Plasencia</a>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="welcome-badge">Welcome! 👋</span>
+                    <h1>Christian Plasencia</h1>
+                    <p class="profession">Technician Trainee</p>
+                    <p class="description">
+                       Hands on industrial maintenance trainee (MSSC certified) with direct experience troubleshooting PLCs, VFDs, motors, sensors, conveyors, and networks systems.
+Backed by 8 years of experience in outbound Target DC, started by loading trailers by hand, too learning every job function and equipment in outbound and training +100 employees
+To back up my commitment, I now have EPA 609, EV1 (xEV Electrical Safety Awareness), and EV2 (xEV Technician Electrical Safety) certifications.  Seeking admission to the Tesla to build a career as a Service Technician.
+
+
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/PORT.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative dots -->
+            <div class="decoration-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>05</h3>
+                    <p>Certifications</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>100+</h3>
+                    <p>Trained Employees</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>08
+                  
+                    </h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>80+</h3>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Experiences</h2>
+                <p></p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <h3>Gateway to College and Career Academy</h3>
+                        <p>Completed the Gateway program, allowing me to finish high school while taking college classes through Riverside City College.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-center">
+                    <div class="timeline-dot" data-year="2015"></div>
+                </div>
+
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <h3>Target DC</h3>
+                        <p>Working across every outbound job function taught me how the whole operation connects, one weak handoff can slow down everything behind it. 
+                          It showed me that when you learn a process well enough, you can spot what’s off, fix it early, and help the next person do it right the first time.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-center">
+                    <div class="timeline-dot" data-year="2020"></div>
+                </div>
+
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <h3>Trainer / Backup Lead</h3>
+                        <p>Selected to train and support daily operations by reinforcing SOPs, safe work practices, and
+                           quality standards while keeping the team on schedule during high-volume shifts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-center">
+                    <div class="timeline-dot" data-year="2025"></div>
+                </div>
+
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <h3>MSSC Equipment Maintenance (SCA-1)</h3>
+                        <p>Working with maintenance and network repair tech experts taught me a lot about mechanical systems (gear/chain/belt drives, 
+                          lubrication, conveyors, TPM), electrical basics (circuits, measurement, sensors, transformers), and fluid power (pneumatics/hydraulics).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-center">
+                    
+                </div>
+
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <h3>MSSC Network Repair (SCA-12)</h3>
+                        <p> I got comfortable setting up Programmable Logic Controller and Variable Frequency Drives, chasing down faults by walking through the ladder logic, checking the sequence, and verifying analog I/O. On the 
+                          network side, I got familiar with industrial Ethernet, including managed switches and EtherNet/IP. This included 400 hours of mandatory hands on labs and individual skill demonstrations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-center">
+                    <div class="timeline-dot" data-year="2026"></div>
+                </div>
+
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <h3>Prepped for EV Service Standards</h3>
+                        <p>Certified in EPA Section 609 (MVAC Refrigerant Handling) and completed xEV Electrical Safety
+                           Awareness (EV1) and xEV Technician Electrical Safety (EV2) technician training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Portfolio Section -->
+   
+  
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with me by using this contact form or reach out directly.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+909 254 9905</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>plasencia11120@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Grand Terrace,<br>CA, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Drop a Line</h2>
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" placeholder="Phone Set" required>
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+
+                        <textarea placeholder="Message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <h2></h2>
+                <p></p>
+
+                <div class="footer-social">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;2022 - team | all rights reserved</p>
+        </div>
+    </section>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
-  </hero>
 
-
-
-  <main class="page-wrapper">
-                                              <!-- about me -->
-    <section class="page-section aboutMe"  id="about">
-      <img src="assets/you.png">
-      <div>
-        <h3>About Me</h3>
-        <p>
-          Im currently attending a Full stack coding bootcamp that focuses on creating scalable applications, data structures, and algorithms. 
-                   The bootcamp is more backend focused using JavaScript, Node, SQL, MongoDB, and React.  
-                   Ive been working for a Target DC for about 5 years. Ive always wanted to get into the software and tech industry.  
-                   I love creating 3d renders and animations using blender. Im looking to have a career change and get my first job as a Full Stack Web Developer. 
-        </p>
-      
-      </div>
-    </section>
-
-                                      <!-- portfolio container -->
-    <h2>My Work</h2>                                  
-    <section class="page-section" id="work">
-                           
-      <div class="flex-container">
-
-        <a href="https://chris70a.github.io/CryptoWeather/" class="flex-item surf-report">
-          <div>
-            <h3>Crypto Weather</h3>
-            <span>Project 1</span>
-          </div>
-        </a>
-        
-        <a href="https://github.com/SpectralRaiden/Beauty_Paradise_Salon" class="flex-item led-wall">
-          <div>
-            <h3>Beauty Paradise Salon</h3>
-            <span>Appointment Booking</span>
-          </div>
-        </a>
-        <a href="#" class="flex-item react-calc">
-          <div>
-            <h3>Calculator</h3>
-            <span>React/JavaScript/CSS</span>
-          </div>
-        </a>
-
-        <a href="#" class="flex-item pastel-puzzles">
-          <div>
-            <h3>Pastel Puzzels</h3>
-            <span>MERN Stack</span>
-          </div>
-        </a>
-
-    
-        <a href="#" class="flex-item run-buddy">
-          <div>
-            <h3>Run Buddy</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-                                          <!-- Contact Info -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <address>
-          <a href="tel:+9092549905">909.254.9905</a>
-          <a href="plasencia1120@gmail.com">Plasencia1120@gmail.com</a>
-          <a href="https://github.com/Chris70A">GitHub</a>
-          <a href="https://twitter.com/Consolelogchris">Twitter</a>
-          <a href="#">Spotify</a>
-        </address>
-      </div>
-    </section>
-  </main>
+    <script src="assets/script.js"></script>
 </body>
-
 </html>
