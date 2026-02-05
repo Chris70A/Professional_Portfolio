@@ -866,78 +866,172 @@ body {
     .navbar .container {
         flex-direction: column;
         gap: 15px;
+        padding: 15px 0;
     }
 
     .nav-menu {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         justify-content: center;
+        font-size: 14px;
+    }
+
+    .nav-menu a {
+        padding: 8px 0;
+    }
+
+    .btn-download {
+        padding: 10px 20px;
+        font-size: 13px;
     }
 
     .hero .container {
         flex-direction: column;
+        gap: 50px;
+        padding: 40px 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         gap: 40px;
     }
 
+    .hero-text {
+        padding: 0 20px;
+    }
+
     .hero-text h1 {
-        font-size: 40px;
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .profession {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
     .profile-circle {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        order: -1;
     }
 
     .decoration-dots {
         display: none;
     }
 
+    .section-header {
+        margin-bottom: 50px;
+    }
+
     .section-header h2 {
-        font-size: 36px;
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .section-header p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .stats .container {
+        gap: 25px;
+    }
+
+    .stat-item {
+        padding: 25px;
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        padding: 0 20px;
     }
 
     .timeline {
-        grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 
     .timeline::before {
-        left: 20px;
+        left: 30px;
+    }
+
+    .timeline-item {
+        min-height: 100px;
     }
 
     .timeline-item-left,
     .timeline-item-right {
-        justify-content: flex-start;
-        margin-left: 80px;
+        padding-left: 100px;
+        padding-right: 20px;
     }
 
     .timeline-item-center {
-        grid-column: 1;
-        margin-left: 0;
-        padding: 20px 0;
+        min-height: 70px;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
     }
 
     .timeline-dot {
-        width: 60px;
-        height: 40px;
-        font-size: 12px;
+        width: 70px;
+        height: 45px;
+        font-size: 13px;
     }
 
     .contact-wrapper {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .footer-content h2 {
-        font-size: 36px;
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .footer-content > p {
+        font-size: 15px;
     }
 
     .social-icons {
@@ -953,43 +1047,114 @@ body {
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .logo-icon {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .nav-menu {
-        gap: 10px;
-        font-size: 12px;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .nav-menu a {
+        padding: 6px 0;
     }
 
     .btn-download {
-        padding: 8px 15px;
+        padding: 10px 20px;
         font-size: 12px;
+        width: 100%;
     }
 
-    .hero-text h1 {
-        font-size: 32px;
+    .hero {
+        padding: 40px 0;
     }
 
-    .profession {
-        font-size: 16px;
+    .hero .container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .stats {
+        padding: 50px 0;
     }
 
     .stats .container {
         grid-template-columns: 1fr;
         gap: 20px;
+        padding: 0 15px;
+    }
+
+    .stat-item {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .stat-content h3 {
+        font-size: 24px;
+    }
+
+    .stat-content p {
+        font-size: 13px;
+    }
+
+    .experiences {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+        padding: 0 15px;
     }
 
     .section-header h2 {
-        font-size: 28px;
+        font-size: 32px;
+        margin-bottom: 15px;
     }
 
     .section-header p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .portfolio {
+        padding: 60px 0;
     }
 
     .portfolio-filters {
         gap: 10px;
+        padding: 0 15px;
     }
 
     .filter-btn {
@@ -999,59 +1164,121 @@ body {
 
     .portfolio-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 18px;
+        padding: 0 15px;
     }
 
     .timeline {
-        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .timeline::before {
+        left: 25px;
+    }
+
+    .timeline-item {
+        min-height: 90px;
     }
 
     .timeline-item-left,
     .timeline-item-right {
-        margin-left: 60px;
+        padding-left: 90px;
+        padding-right: 15px;
     }
 
     .timeline-content {
-        max-width: 200px;
+        max-width: 100%;
         padding: 15px;
+        border-radius: 6px;
     }
 
     .timeline-content h3 {
-        font-size: 14px;
+        font-size: 15px;
+        margin-bottom: 8px;
     }
 
     .timeline-content p {
         font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .timeline-dot {
+        width: 60px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 15px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 0;
     }
 
     .contact-info h2,
     .contact-form h2 {
-        font-size: 24px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info > p {
+        font-size: 13px;
+        margin-bottom: 30px;
     }
 
     .contact-item {
         gap: 15px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .contact-text p {
+        font-size: 13px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .contact-form input,
     .contact-form textarea {
         padding: 12px;
         font-size: 13px;
+        border-radius: 4px;
     }
 
     .btn-submit {
         padding: 12px 30px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .footer-section {
+        padding: 60px 0 30px;
     }
 
     .footer-content h2 {
         font-size: 32px;
+        margin-bottom: 10px;
     }
 
     .footer-content > p {
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 30px;
     }
 
     .footer-social {
@@ -1063,5 +1290,22 @@ body {
         width: 40px;
         height: 40px;
         font-size: 14px;
+    }
+
+    .social-icons {
+        right: 15px;
+        bottom: 20px;
+        gap: 12px;
+    }
+
+    .social-icons a {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        padding-top: 20px;
+        font-size: 12px;
     }
 }
